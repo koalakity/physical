@@ -1,207 +1,182 @@
 <!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
-        <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-
-        </div>
-        <div class="page-group">
-      <!-- 你的html代码 -->
-      <div class="page">
-          <header class="bar bar-nav">
-              <h1 class="title">我的健身圈</h1>
-          </header>
-          <nav class="bar bar-tab">
-              <a class="tab-item external active" href="#">
-                  <span class="icon icon-home"></span>
-                  <span class="tab-label">健身圈</span>
-              </a>
-              <a class="tab-item external" href="msg.html">
-                  <span class="icon icon-me"></span>
-                  <span class="tab-label">消息</span>
-              </a>
-              <a class="tab-item external" href="relations.html">
-                  <span class="icon icon-star"></span>
-                  <span class="tab-label">人脉</span>
-              </a>
-              <a class="tab-item external" href="profile.html">
-                  <span class="icon icon-settings"></span>
-                  <span class="tab-label">我</span>
-              </a>
-          </nav>
-          <div class="content">
-              <!-- 这里是页面内容区 -->
-              <div class="page-index">
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#"  href="router.html">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-                  <div class="card">
-                      <div style="background-image:url(http://gqianniu.alicdn.com/bao/uploaded/i4//tfscom/i3/TB10LfcHFXXXXXKXpXXXXXXXXXX_!!0-item_pic.jpg_250x250q60.jpg)" valign="bottom" class="card-header color-white no-border">旅途的山</div>
-                      <div class="card-content">
-                          <div class="card-content-inner">
-                              <p class="color-gray">发表于 2015/01/15</p>
-                              <p>此处是内容...</p>
-                          </div>
-                      </div>
-                      <div class="card-footer">
-                          <a href="#" class="link">赞</a>
-                          <a href="#" class="link">更多</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
+  <head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="http://g.alicdn.com/msui/sm/0.6.2/css/??sm.min.css,sm-extend.min.css">
+    <title>Hello World</title>
+    <style type="text/css">
+    .infinite-scroll-preloader {
+    margin-top:-20px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <h1>Apache Cordova</h1>
+      <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
       </div>
-  </div>
-        <script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
-        <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
-        <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js' charset='utf-8'></script>
-        <script type="text/javascript">
-            $.init();
-            $('.tab-item external active').html();
-        </script>
-    </body>
+    </div>
+    <header class="bar bar-nav" style="z-index: 9999;background-color: #0a8ddf">
+      <h1 class="title">我的圈子</h1>
+    </header>
+    <nav class="bar bar-tab" data-text ="圈圈" style="z-index: 9999">
+      <a class="tab-item active" href="#index">
+        <span class="icon icon-home"></span>
+        <span class="tab-label">健身圈</span>
+      </a>
+      <a class="tab-item" href="#msg">
+        <span class="icon icon-me"></span>
+        <span class="tab-label">消息</span>
+      </a>
+      <a class="tab-item" href="#relations">
+        <span class="icon icon-star"></span>
+        <span class="tab-label">人脉</span>
+      </a>
+      <a class="tab-item" href="#profile">
+        <span class="icon icon-settings"></span>
+        <span class="tab-label">我</span>
+      </a>
+    </nav>
+    <div class="page-group">
+      <!-- 你的html代码 -->
+      <div class="page page-current" id="index">
+        <header class="bar bar-nav">
+          <h1 class="title">我的圈子</h1>
+        </header>
+        <div class="content infinite-scroll infinite-scroll-bottom pull-to-refresh-content" data-ptr-distance="20" data-distance="100" style="margin-bottom:2.5rem">
+          <!-- 默认的下拉刷新层 -->
+          <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+          </div>
+          <div class="list-block" style="margin:0rem 0rem;">
+            <ul class="list-container">
+            </ul>
+          </div>
+          <!-- 加载提示符 -->
+          <div class="infinite-scroll-preloader">
+            <div class="preloader"></div>
+          </div>
+        </div>
+      </div>
+      <div class="page" id="msg">
+        <header class="bar bar-nav">
+          <h1 class="title">消息</h1>
+        </header>
+        <div class="content">
+          <!-- 这里是页面内容区 -->
+          <div class="page-index">
+            asdfasfdasdfasdfasdfasdfafa134321412341234
+          </div>
+        </div>
+      </div>
+      <div class="page" id="relations">
+        <header class="bar bar-nav">
+          <h1 class="title">人脉</h1>
+        </header>
+        <div class="content">
+          <!-- 这里是页面内容区 -->
+          <div class="page-index">
+            asdfasfdasdfasdfasdfasdfafa134321412341234
+          </div>
+        </div>
+      </div>
+      <div class="page" id="profile">
+        <header class="bar bar-nav">
+          <h1 class="title">我</h1>
+        </header>
+        <div class="content">
+          <!-- 这里是页面内容区 -->
+          <div class="page-index">
+            asdfasfdasdfasdfasdfasdfafa134321412341234
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type='text/javascript' src='http://g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/sm.js' charset='utf-8'></script>
+    <script type='text/javascript' src='http://g.alicdn.com/msui/sm/0.6.2/js/??sm.min.js,sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript">
+    $.init();
+    $('.bar .active').html();
+    $('.tab-item').on('click',function(){
+    if(!$(this).hasClass('active')){
+    $('.bar .active').removeClass('active external');
+    $(this).addClass('active');
+    }else{
+    $(this).addClass('external');
+    }
+    });
+    var loading = false;
+    // 最多可加载的条目
+    var maxItems = 100;
+    // 每次加载添加多少条目
+    var itemsPerLoad = 20;
+    function addItems(number, lastIndex) {
+    // 生成新条目的HTML
+    var html = '';
+    for (var i = lastIndex + 1; i <= lastIndex + number; i++) {
+    html += '<li class="item-content"><div class="item-inner"><div class="item-title">Item ' + i + '</div></div></li>';
+    }
+    // 添加新条目
+    $('.infinite-scroll-bottom .list-container').append(html);
+    }
+    //预先加载20条
+    addItems(itemsPerLoad, 0);
+    // 上次加载的序号
+    var lastIndex = 20;
+    // 注册'infinite'事件处理函数
+    $(document).on('infinite', '.infinite-scroll-bottom',function() {
+    // 如果正在加载，则退出
+    if (loading) return;
+    // 设置flag
+    loading = true;
+    // 模拟1s的加载过程
+    setTimeout(function() {
+    // 重置加载flag
+    loading = false;
+    if (lastIndex >= maxItems) {
+    // 加载完毕，则注销无限加载事件，以防不必要的加载
+    $.detachInfiniteScroll($('.infinite-scroll'));
+    // 删除加载提示符
+    $('.infinite-scroll-preloader').remove();
+    return;
+    }
+    // 添加新条目
+    addItems(itemsPerLoad, lastIndex);
+    // 更新最后加载的序号
+    lastIndex = $('.list-container li').length;
+    //容器发生改变,如果是js滚动，需要刷新滚动
+    $.refreshScroller();
+    }, 1000);
+    });
+    // 添加'refresh'监听器
+    $(document).on('refresh', '.pull-to-refresh-content',function(e) {
+    // 模拟2s的加载过程
+    setTimeout(function() {
+    var cardNumber = $(e.target).find('.card').length + 1;
+    var cardHTML = '<div class="card">' +
+      '<div class="card-header">card'+cardNumber+'</div>' +
+      '<div class="card-content">' +
+        '<div class="card-content-inner">' +
+          '这里是第' + cardNumber + '个card，下拉刷新会出现第' + (cardNumber + 1) + '个card。' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+    $(e.target).find('.card-container').prepend(cardHTML);
+    // 加载完毕需要重置
+    $.pullToRefreshDone('.pull-to-refresh-content');
+    }, 2000);
+    });
+    </script>
+  </body>
 </html>
