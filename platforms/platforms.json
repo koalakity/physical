@@ -1,3 +1,8 @@
 {
+<<<<<<< HEAD
     "browser": "4.1.0"
+=======
+    "browser": "4.1.0",
+    "android": "5.1.1"
+>>>>>>> 45e4faaea920a761d4f926aee9ee7de8846674a5
 }
